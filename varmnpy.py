@@ -10,7 +10,6 @@
 # $Y = X \beta + e$
 # ,where $e \sim N(0,\Sigma \bigotimes I_T)$
 
-# In[ ]:
 
 
 import numpy as np 
@@ -19,8 +18,6 @@ import math
 from scipy.stats import invwishart
 from scipy.stats import multivariate_normal
 
-
-# In[ ]:
 
 
 #Processing and returning data of period T after a lag of p
@@ -106,8 +103,6 @@ def MC_Minnesota_prior(data_np, p, mn_lambda):
 
     return beta, sigma
 
-
-# In[ ]:
 
 
 #Forecasting based on beta and sigmma
